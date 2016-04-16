@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>省市区联动 DEMO</title>
+</head>
+<body>
+<form method="post" action="post.php">
+<select id="p" name="province_id"></select>
+<select id="c" name="city_id"></select>
+<select id="d" name="district_id"></select>
+    <p>
+        <input type="submit">
+    </p>
+</form>
+
+<script src="jquery.min.js"></script>
+<script src="AreaData.js"></script>
+<script src="Area.js"></script>
+<script>
+    Area('#p', '#c', '#d');
+</script>
+</body>
+</html>
